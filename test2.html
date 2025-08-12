@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>منوی کافه</title>
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@latest/dist/font-face.css" rel="stylesheet">
+
+<style>
+  body {
+    font-family: 'Vazir', system-ui, sans-serif;
+    direction: rtl;
+    margin: 2rem auto;
+    max-width: 600px;
+    padding: 0 1rem;
+    color: #E4E0E1;
+    background: #493628;
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-weight: 800;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .section-title {
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 0.7rem 1rem;
+    background: #704c35;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .section-title:hover {
+    background: #8c654a;
+  }
+
+  .items-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    padding: 0 0.5rem;
+  }
+  .items-wrapper.open {
+    padding: 0.5rem;
+  }
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    background: #AB886D;
+    border-radius: 10px;
+    padding: 0.6rem 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .item-info { max-width: 70%; }
+  .item-name { font-weight: 600; margin-bottom: 0.2rem; }
+  .item-price { font-weight: 600; white-space: nowrap; }
+  .items-wrapper {
+  margin-bottom: 1rem;
+}
+.section-title::after {
+  content: "▼";
+  float: left;
+  transition: transform 0.3s ease;
+}
+.section-title.open::after {
+  transform: rotate(180deg);
+}
+.section-title:hover {
+  background: #8c654a;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+</style>
+</head>
+<body>
+
+<h1>منوی کافه</h1>
+
+<div class="menu-section">
+  <div class="section-title">قهوه‌ها                 <small style="font-size:0.8rem; color:#ccc;">برای مشاهده کلیک کنید</small></div>
+  <div class="items-wrapper">
+    <div class="item">
+      <div class="item-info"><div class="item-name">اسپرسو</div><div class="item-desc">...</div></div>
+      <div class="item-price">45٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info"><div class="item-name">دبل اسپرسو</div><div class="item-desc">...</div></div>
+      <div class="item-price">50٬000 تومان</div>
+    </div>
+        <div class="item">
+      <div class="item-info">
+        <div class="item-name">اسپرسو ماکیاتو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">65٬000 تومان</div>
+    </div>
+	   <div class="item">
+      <div class="item-info">
+        <div class="item-name">آفوگاتو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">90٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">کن پانا</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">90٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">آمریکانو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">65٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">موکا</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">120٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">کارامل ماکیاتو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">120٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">هزلنات ماکیاتو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">120٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">سینمن ماکیاتو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">120٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">آلموند ماکیاتو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">120٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">لته</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">90٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">اوله</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">80٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">رومانو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">80٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">یونانی</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">90٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">ترک</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">55٬000 تومان</div>
+    </div>
+  </div>
+</div>
+<div class="menu-section">
+  <div class="section-title">هات چاکلت ها                 <small style="font-size:0.8rem; color:#ccc;">برای مشاهده کلیک کنید</small></div>
+  <div class="items-wrapper">
+    <div class="item">
+      <div class="item-info"><div class="item-name">مخصوص</div><div class="item-desc">...</div></div>
+      <div class="item-price">120٬000 تومان</div>
+    </div>
+        <div class="item">
+      <div class="item-info">
+        <div class="item-name">مخصوص</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">120٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">ساده</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">95٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">سینمن</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">95٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">وایت</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">80٬000 تومان</div>
+    </div>
+  </div>
+</div>
+  <div class="menu-section">
+    <div class="section-title">نوشیدنی‌های گرم                 <small style="font-size:0.8rem; color:#ccc;">برای مشاهده کلیک کنید</small></div>
+	  <div class="items-wrapper">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">چای سیاه</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">25٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">چای زعفران</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">45٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">چای ماسالا</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">80٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">چای لیمو نعنا</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">45٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">چای لیمو دارچین</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">50٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">شیر کاکائو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">80٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">شیر نسکافه</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">80٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">شیر دارچین عسلی</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">60٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">شیر گرم</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">35٬000 تومان</div>
+    </div>
+  </div>
+  <div class="menu-section">
+    <div class="section-title">قهوه سرد                 <small style="font-size:0.8rem; color:#ccc;">برای مشاهده کلیک کنید</small></div>
+	 <div class="items-wrapper">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">آیس لته</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">90٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">آیس آمریکانو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">90٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">موکا فراپاچینو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">120٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">کارامل فراپاچینو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">120٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">سینمن فراپاچینو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">120٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">هزلنات فراپاچینو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">120٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">آلموند فراپاچینو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">120٬000 تومان</div>
+    </div>
+  </div>
+  <div class="menu-section">
+    <div class="section-title">دمنوش ها                 <small style="font-size:0.8rem; color:#ccc;">برای مشاهده کلیک کنید</small></div>
+	 <div class="items-wrapper">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">چای ترش</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">65٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">چای سبز</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">65٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">گل گاوزبان</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">65٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">به لیمو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">65٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">آویشن</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">65٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">پنیرک</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">65٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">سیب دارچین</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">65٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">پونه</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">60٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">بابونه</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">60٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">نازنوش</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">65٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">زاگرس</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">70٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">هفت افسانه</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">75٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">فرش قرمز</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">85٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">دره سبز</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">85٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">آسیایی</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">70٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">شیراز</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">80٬000 تومان</div>
+    </div>
+  </div>
+  <div class="menu-section">
+    <div class="section-title">بستنی ها                 <small style="font-size:0.8rem; color:#ccc;">برای مشاهده کلیک کنید</small></div>
+	 <div class="items-wrapper">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">سان شاین</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">155٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">ساندی هالیدی</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">ساندی ردبری</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">ساندی شکلات</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">ساندی آناناس</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">یه ترکیب دیگه میخوام..</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">؟؟؟؟؟؟؟؟ تومان</div>
+    </div>
+  </div>
+  <div class="menu-section">
+    <div class="section-title">گلاسه ها                 <small style="font-size:0.8rem; color:#ccc;">برای مشاهده کلیک کنید</small></div>
+	 <div class="items-wrapper">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">پرتقال</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">گیلاس</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">انبه</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">آناناس</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">کافه</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">1300٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">شکلات</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">سیب</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+  </div>
+  <div class="menu-section">
+    <div class="section-title">شیک ها                 <small style="font-size:0.8rem; color:#ccc;">برای مشاهده کلیک کنید</small></div>
+	 <div class="items-wrapper">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">شاتوت</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">آناناس</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">انار</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">شکلات</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">توت فرنگی</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">طالبی</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">انبه</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">کارامل</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">کارامل</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">وانیل</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">دارک</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">موز</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">نسکافه</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">پرتقال</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">هلو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">بلوبری</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">سیب ترش</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+</div>
+  <div class="menu-section">
+    <div class="section-title">شیک های مخصوص                 <small style="font-size:0.8rem; color:#ccc;">برای مشاهده کلیک کنید</small></div>
+	 <div class="items-wrapper">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">معجون</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">200٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">نوتلا</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">275٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">ریو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">150٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">هالیدی</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">145٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">ردبری</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">145٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">زعفرانی</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">150٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">اسپرسو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">165٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">موکا</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">175٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">کره بادام زمینی</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">150٬000 تومان</div>
+    </div>    <div class="item">
+      <div class="item-info">
+        <div class="item-name">کرم بیسکوئیت</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">175٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">بیسکوئیت مادر</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">145٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">موز شکلات</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">145٬000 تومان</div>
+    </div>
+</div>
+  <div class="menu-section">
+    <div class="section-title">ماکتل ها                 <small style="font-size:0.8rem; color:#ccc;">برای مشاهده کلیک کنید</small></div>
+	 <div class="items-wrapper">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">پیناکولادا</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">85٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">موهیتو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">99٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">رد موهیتو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">110٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">بلو موهیتو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">110٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">رد هورس</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">85٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">شیر موز</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">90٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">شیر موزی بستنی</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">110٬000 تومان</div>
+    </div>
+</div>
+  <div class="menu-section">
+    <div class="section-title">نکتار ها                 <small style="font-size:0.8rem; color:#ccc;">برای مشاهده کلیک کنید</small></div>
+	 <div class="items-wrapper">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">آلوورا</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">75٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">پرتقال</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">75٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">آلبالو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">75٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">آناناس</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">75٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">انبه</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">75٬000 تومان</div>
+    </div>    <div class="item">
+      <div class="item-info">
+        <div class="item-name">انار</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">75٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">سیب</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">75٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">سیب پرتقال</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">85٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">انار پرتقال</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">85٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">هلو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">75٬000 تومان</div>
+    </div>
+</div>
+  <div class="menu-section">
+    <div class="section-title">پیش غذا                 <small style="font-size:0.8rem; color:#ccc;">برای مشاهده کلیک کنید</small></div>
+	 <div class="items-wrapper">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">چیپیتو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">250٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">سیب زمینی</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">130٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">سیب زمینی با قارچ و پنیر</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">200٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">سیب زمینی ویژه</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">250٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">چیپس و پنیر</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">150٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">اسنک</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">110٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">نان سیر</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">145٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">پاستا آلفردو</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">250٬000 تومان</div>
+    </div>
+</div>
+  <div class="menu-section">
+    <div class="section-title">ساندویچ ها                 <small style="font-size:0.8rem; color:#ccc;">برای مشاهده کلیک کنید</small></div>
+	 <div class="items-wrapper">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">همبرگر</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">150٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">هات داگ</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">140٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">هات داگ پنیری</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">160٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">مرغ</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">150٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">رست بیف</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">150٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">ماشروم برگر</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">200٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">چیز برگر</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">170٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">دوبل برگر</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">210٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">دوبل چیز برگر</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">230٬000 تومان</div>
+    </div>
+</div>
+  <div class="menu-section">
+    <div class="section-title">پیتزا ها                 <small style="font-size:0.8rem; color:#ccc;">برای مشاهده کلیک کنید</small></div>
+	 <div class="items-wrapper">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">میکس</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">220٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">پپرونی</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">220٬000 تومان</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">قارچ و مرغ</div>
+        <div class="item-desc">...</div>
+      </div>
+      <div class="item-price">240٬000 تومان</div>
+    </div>
+</div>
+</div>
+<footer style="width: 99%; text-align: center; padding: 13px 0; background: transparent; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <p style="font-size: 14px; color: #AB886D; margin: 0;">
+    made by <a href="https://www.instagram.com/ig.amirabbas?igsh=MW81NWN4N3hzamM0NQ%3D%3D&utm_source=qr" target="_blank" rel="noopener" style="color: #AB886D;">
+      AmirAbbas
+    </a>
+  </p>
+</footer>
+
+<style>
+  footer a:hover {
+    color: #003d80;
+    text-decoration: underline;
+  }
+</style>
+<script>
+document.querySelectorAll('.section-title').forEach(title => {
+  title.addEventListener('click', () => {
+    const wrapper = title.nextElementSibling;
+    wrapper.classList.toggle('open');
+    if (wrapper.classList.contains('open')) {
+      wrapper.style.maxHeight = wrapper.scrollHeight + "px";
+    } else {
+      wrapper.style.maxHeight = null;
+    }
+  });
+});
+</script>
+
+</body>
+</html>
