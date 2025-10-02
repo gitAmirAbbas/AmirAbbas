@@ -18,12 +18,33 @@
     line-height: 1.4;
   }
 
-  h1 {
-    font-weight: 800;
-    font-size: 2.4rem;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
+    .header {
+      padding: 1rem;
+      display: flex;
+      justify-content: flex-end;
+      align-items: right;
+      margin-bottom: 0.5rem;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #fff;
+      align-items: center;
+      position: absolute; top: 20px; left: 50%; transform: translateX(-50%);
+
+    }
+    .header a {
+      font-size: 0.9rem;
+      margin-right: 12px;
+      text-decoration: none;
+      color: #ccc;
+      transition: color 0.3s ease;
+      position: absolute; top: 30px; left:60; transform: translateX(-10%);
+    }
+    .header a:hover {
+      color: #fff;
+    }
   .section-title {
     font-weight: 700;
     font-size: 1.3rem;
@@ -79,8 +100,10 @@
 </head>
 <body>
 
-<h1>منوی کافه</h1>
-
+<div class="header">
+  <h1>کافه دیدار</h1>
+  <a href="https://www.instagram.com/cafee.diidar?igsh=MXI4d3dtdXl4N3drMg==" target="_blank">IG: cafee.diidar</a>
+</div>
 <div class="menu-section">
   <div class="section-title">قهوه‌                 <small style="font-size:0.6rem; color:#ccc;">برای مشاهده کلیک کنید</small></div>
   <div class="items-wrapper">
@@ -90,7 +113,7 @@
     </div>
     <div class="item">
       <div class="item-info"><div class="item-name">دبل اسپرسو</div><div class="item-desc">هفتاد سی روبوستا</div></div>
-      <div class="item-price">۵۰٬۰۰۰ تومان</div>
+      <div class="item-price">۵۵٬۰۰۰ تومان</div>
     </div>
 	   <div class="item">
       <div class="item-info">
@@ -124,20 +147,6 @@
       <div class="item-info">
         <div class="item-name">هزلنات ماکیاتو</div>
         <div class="item-desc">سیروپ فندق،شیر،اسپرسو</div>
-      </div>
-      <div class="item-price">۱۲۰٬۰۰۰ تومان</div>
-    </div>
-    <div class="item">
-      <div class="item-info">
-        <div class="item-name">سینمن ماکیاتو</div>
-        <div class="item-desc">سیروپ دارچین،شیر،اسپرسو</div>
-      </div>
-      <div class="item-price">۱۲۰٬۰۰۰ تومان</div>
-    </div>
-    <div class="item">
-      <div class="item-info">
-        <div class="item-name">آلموند ماکیاتو</div>
-        <div class="item-desc">سیروپ بادام تلخ،شیر،اسپرسو</div>
       </div>
       <div class="item-price">۱۲۰٬۰۰۰ تومان</div>
     </div>
@@ -205,7 +214,7 @@
         <div class="item-name">چای سیاه</div>
         <div class="item-desc">...</div>
       </div>
-      <div class="item-price">۲۵٬۰۰۰ تومان</div>
+      <div class="item-price">۳۵٬۰۰۰ تومان</div>
     </div>
     <div class="item">
       <div class="item-info">
@@ -323,67 +332,53 @@
     <div class="item">
       <div class="item-info">
         <div class="item-name">آیس لته</div>
-        <div class="item-desc">اسپرسو،شیر،یخ</div>
+        <div class="item-desc">اسپرسو،شیر،خامه،یخ</div>
       </div>
       <div class="item-price">۹۰٬۰۰۰ تومان</div>
     </div>
     <div class="item">
       <div class="item-info">
         <div class="item-name">آیس آمریکانو</div>
-        <div class="item-desc">اسپرسو،آب،یخ</div>
+        <div class="item-desc">اسپرسو،آب،خامه،یخ</div>
       </div>
-      <div class="item-price">۹۰٬۰۰۰ تومان</div>
+      <div class="item-price">۷۰٬۰۰۰ تومان</div>
     </div>
     <div class="item">
       <div class="item-info">
         <div class="item-name">آیس موکا</div>
-        <div class="item-desc">اسپرسو،شیر،سیروپ شکلات،یخ</div>
+        <div class="item-desc">اسپرسو،شیر،سیروپ شکلات،خامه،یخ</div>
       </div>
       <div class="item-price">۱۲۰٬۰۰۰ تومان</div>
     </div>
     <div class="item">
       <div class="item-info">
         <div class="item-name">آیس کارامل</div>
-        <div class="item-desc">اسپرسو،شیر،سیروپ کارامل،یخ</div>
+        <div class="item-desc">اسپرسو،شیر،سیروپ کارامل،خامه،یخ</div>
       </div>
       <div class="item-price">۱۲۰٬۰۰۰ تومان</div>
     </div>
         <div class="item">
       <div class="item-info">
         <div class="item-name">موکا فراپاچینو</div>
-        <div class="item-desc">اسپرسو،شیر،سیروپ شکلات،یخ</div>
+        <div class="item-desc">اسپرسو،شیر،سیروپ شکلات،خامه،یخ</div>
       </div>
       <div class="item-price">۱۲۰٬۰۰۰ تومان</div>
     </div>
         <div class="item">
       <div class="item-info">
         <div class="item-name">کارامل فراپاچینو</div>
-        <div class="item-desc">اسپرسو،شیر،سیروپ کارامل،یخ</div>
-      </div>
-      <div class="item-price">۱۲۰٬۰۰۰ تومان</div>
-    </div>
-    <div class="item">
-      <div class="item-info">
-        <div class="item-name"> سینمن فراپاچینو</div>
-        <div class="item-desc">اسپرسو،شیر،سیروپ دارچین،یخ</div>
+        <div class="item-desc">اسپرسو،شیر،سیروپ کارامل،خامه،یخ</div>
       </div>
       <div class="item-price">۱۲۰٬۰۰۰ تومان</div>
     </div>
     <div class="item">
       <div class="item-info">
         <div class="item-name"> هزلنات فراپاچینو</div>
-        <div class="item-desc">اسپرسو،شیر،سیروپ دارچین،یخ</div>
+        <div class="item-desc">اسپرسو،شیر،سیروپ دارچین،خامه،یخ</div>
       </div>
       <div class="item-price">۱۲۰٬۰۰۰ تومان</div>
     </div>
-    <div class="item">
-      <div class="item-info">
-        <div class="item-name"> آلموند فراپاچینو</div>
-        <div class="item-desc">اسپرسو،شیر،سیروپ بادام تلخ،یخ</div>
-      </div>
-      <div class="item-price">۱۲۰٬۰۰۰ تومان</div>
-    </div>
-  </div>
+  </div>  
  <div class="menu-section">
     <div class="section-title">نکتار (نوشیدنی غیر طبیعی)                 <small style="font-size:0.6rem; color:#ccc;">برای مشاهده کلیک کنید</small></div>
 	 <div class="items-wrapper">
@@ -419,7 +414,7 @@
         <div class="item-name">پیناکولادا</div>
         <div class="item-desc">...</div>
       </div>
-      <div class="item-price">۸۵٬۰۰۰ تومان</div>
+      <div class="item-price">۹۵٬۰۰۰ تومان</div>
     </div>
 </div>
  <div class="menu-section">
@@ -431,20 +426,6 @@
         <div class="item-desc">...</div>
       </div>
       <div class="item-price">۹۹٬۰۰۰ تومان</div>
-    </div>
-    <div class="item">
-      <div class="item-info">
-        <div class="item-name">رد موهیتو</div>
-        <div class="item-desc">...</div>
-      </div>
-      <div class="item-price">۱۱۰٬۰۰۰ تومان</div>
-    </div>
-    <div class="item">
-      <div class="item-info">
-        <div class="item-name">بلو موهیتو</div>
-        <div class="item-desc">...</div>
-      </div>
-      <div class="item-price">۱۱۰٬۰۰۰ تومان</div>
     </div>
     <div class="item">
       <div class="item-info">
@@ -472,7 +453,7 @@
         <div class="item-name">طالبی بستنی</div>
         <div class="item-desc">...</div>
       </div>
-      <div class="item-price">۹۰٬۰۰۰ تومان</div>
+      <div class="item-price">۱۱۰٬۰۰۰ تومان</div>
     </div>
 </div>
   <div class="menu-section">
@@ -484,20 +465,6 @@
         <div class="item-desc">چهار اسکوپ بستنی به دلخواه،ژله،میوه</div>
       </div>
       <div class="item-price">۱۵۵٬۰۰۰ تومان</div>
-    </div>
-    <div class="item">
-      <div class="item-info">
-        <div class="item-name">ساندی هالیدی</div>
-        <div class="item-desc">بستنی موز-آناناس-انبه،ژله،کیک</div>
-      </div>
-      <div class="item-price">۱۳۰٬۰۰۰ تومان</div>
-    </div>
-    <div class="item">
-      <div class="item-info">
-        <div class="item-name">ساندی ردبری</div>
-        <div class="item-desc">بستنی شاتوت-انار-توت فرنگی، ژله،کیک</div>
-      </div>
-      <div class="item-price">۱۳۰٬۰۰۰ تومان</div>
     </div>
     <div class="item">
       <div class="item-info">
@@ -538,20 +505,6 @@
     <div class="item">
       <div class="item-info">
         <div class="item-name">شاتوت</div>
-        <div class="item-desc">...</div>
-      </div>
-      <div class="item-price">۱۳۰٬۰۰۰ تومان</div>
-    </div>
-    <div class="item">
-      <div class="item-info">
-        <div class="item-name">آناناس</div>
-        <div class="item-desc">...</div>
-      </div>
-      <div class="item-price">۱۳۰٬۰۰۰ تومان</div>
-    </div>
-    <div class="item">
-      <div class="item-info">
-        <div class="item-name">انار</div>
         <div class="item-desc">...</div>
       </div>
       <div class="item-price">۱۳۰٬۰۰۰ تومان</div>
@@ -640,7 +593,7 @@
     <div class="item">
       <div class="item-info">
         <div class="item-name">ریو</div>
-        <div class="item-desc">بیسکوئیت ریو،بستنی وانیل</div>
+        <div class="item-desc">بستنی شکلات،بیسکوئیت ریو،بستنی وانیل</div>
       </div>
       <div class="item-price">۱۳۵٬۰۰۰ تومان</div>
     </div>
@@ -908,4 +861,3 @@ document.querySelectorAll('.section-title').forEach(title => {
 
 </body>
 </html>
-
